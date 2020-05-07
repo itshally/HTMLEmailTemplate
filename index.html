@@ -5,7 +5,189 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>w3newbie HTML Email</title>
-	<link rel="stylesheet" href="css/style.css">
+	<style>
+		/* default styles from files */
+		body {
+			Margin: 0;
+			padding: 0;
+			background-color: #f6f9fc;
+		}
+
+		table {
+			border-spacing: 0;
+		}
+
+		td {
+			padding: 0;
+		}
+
+		img {
+			border: 0;
+		}
+
+		/* added styles from tutorial */
+		.wrapper {
+			width: 100%;
+			table-layout: fixed;
+			background: #f6f9fc;
+			padding-bottom: 40px;
+		}
+
+		.webkit {
+			max-width: 600px;
+			background-color: #ffffff;
+			Margin: auto;
+		}
+
+		.outer {
+			Margin: 0 auto;
+			width: 100%;
+			max-width: 600px;
+			border-spacing: 0;
+			font-family: sans-serif;
+			color: #4a4a4a;
+		}
+
+		.outer tr td table {
+			width: 100%;
+		}
+
+		/* style for the first row where the logo is placed */
+		.logo-row td {
+			Margin: auto;
+			background-color: #388cda;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.logo {
+			width: 180px;
+		}
+
+		/* style for the second row where the banner is placed */
+		.banner {
+			width: 600px;
+			max-width: 100%;
+		}
+
+		/* style for the third row where the 3 columns are placed */
+		.three-columns {
+			text-align: center;
+			font-size: 0;
+			line-height: 0;
+			padding-top: 40px;
+			padding-bottom: 30px;
+		}
+
+		.three-columns .column {
+			width: 100%;
+			max-width: 200px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.padding {
+			padding: 15px;
+		}
+
+		.three-columns .content {
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #388cda;
+			font-size: 16px;
+		}
+
+		/* content data */
+		.content-data {
+			padding: 10px;
+		}
+
+		.content-img {
+			width: 150px;
+			max-width: 150px;
+		}
+
+		.content-title {
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		/* style for the fourth row where the social icons are placed */
+		.social-row table td {
+			background-color: #388cda;
+			padding: 15px;
+			text-align: center;
+		}
+
+		.social-row p {
+			font-size: 18px;
+			color: #ffffff;
+			margin-bottom: 13px;
+		}
+
+		.social-icons {
+			width: 30px;
+		}
+
+		/* style for the fifth row where the footer is placed */
+		.footer-row td {
+			background-color: #efefef;
+		}
+
+		.footer-row table td {
+			padding: 20px;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+
+		.footer-logo {
+			width: 160px;
+		}
+
+		.footer-row p {
+			font-size: 16px;
+			Margin-bottom: 10px;
+		}
+
+		/* style for the sixth row where the subscription link is placed */
+		.sub-row td {
+			padding-bottom: 25px;
+			text-align: center;
+			Margin: auto;
+		}
+
+		.sub-row a {
+			font-style: 13px;
+		}
+
+		.bottom-line {
+			height: 20px;
+			background-color: #388cda;
+		}
+
+		@media screen and (max-width: 600px) {
+			img.third-img-last {
+				width: 200px !important;
+				max-width: 200px !important;
+			}
+
+			.padding {
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			img.third-img {
+				width: 200px !important;
+				max-width: 200px !important;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -47,8 +229,8 @@
 											<td class="padding">
 												<table class="content">
 													<tr>
-														<td><a href="#"><img src="img/380x280.jpg" class="content-img"
-																	alt=""></a></td>
+														<td><a href="#"><img src="img/380x280.jpg"
+																	class="content-img third-img" alt=""></a></td>
 													</tr>
 													<tr>
 														<td class="content-data">
@@ -70,8 +252,8 @@
 											<td class="padding">
 												<table class="content">
 													<tr>
-														<td><a href="#"><img src="img/380x280-2.jpg" class="content-img"
-																	alt=""></a></td>
+														<td><a href="#"><img src="img/380x280-2.jpg"
+																	class="content-img third-img" alt=""></a></td>
 													</tr>
 													<tr>
 														<td class="content-data">
@@ -93,8 +275,8 @@
 											<td class="padding">
 												<table class="content">
 													<tr>
-														<td><a href="#"><img src="img/380x280-3.jpg" class="content-img"
-																	alt=""></a></td>
+														<td><a href="#"><img src="img/380x280-3.jpg"
+																	class="content-img third-img-last" alt=""></a></td>
 													</tr>
 													<tr>
 														<td class="content-data">
@@ -113,6 +295,70 @@
 							</tr>
 						</table>
 					</td>
+				</tr>
+
+				<!-- row for social media icons -->
+				<tr class="social-row">
+					<td>
+						<table>
+							<tr>
+								<td>
+									<p>Connect With Us</p>
+									<!-- facebook -->
+									<a href="#">
+										<img src="img/white-facebook.png" class="social-icons" alt="facebook logo">
+									</a>
+									<!-- twitter -->
+									<a href="#">
+										<img src="img/white-twitter.png" class="social-icons" alt="twitter logo">
+									</a>
+									<!-- youtube -->
+									<a href="#">
+										<img src="img/white-youtube.png" class="social-icons" alt="youtube logo">
+									</a>
+									<!-- linkedin -->
+									<a href="#">
+										<img src="img/white-linkedin.png" class="social-icons" alt="linkedin logo">
+									</a>
+									<!-- instagram -->
+									<a href="#">
+										<img src="img/white-instagram.png" class="social-icons" alt="instagram logo">
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- row for footer -->
+				<tr class="footer-row">
+					<td>
+						<table>
+							<tr>
+								<td>
+									<a href="#">
+										<img src="img/w3newbie.png" class="footer-logo" alt="w3newbie logo">
+									</a>
+									<p>w3newbie HTML Email</p>
+									<p>123 Street Road, City, State 55555</p>
+									<p><a href="mailto:email@example.com">email@example.com</a></p>
+									<p><a href="tel:18008888888">1-800-888-8888</a></p>
+								</td>
+							</tr>
+
+							<!-- row for subscription link -->
+							<tr class="sub-row">
+								<td>
+									<p><a href="#">UNSUBSCRIBE</a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- row for blue line -->
+				<tr class="bottom-line">
+					<td></td>
 				</tr>
 			</table>
 		</div>
